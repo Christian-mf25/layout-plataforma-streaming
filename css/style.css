@@ -1,39 +1,108 @@
-/*
-Theme Name: Netflix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
 :root{
-  
+	--cor-de-fundo: #00002e;
 }
 
-/*BODY*/
-	body{
+body, h2, header, figure, img, figcaption, ul, li, footer, button, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
 
+body{
+	background-color: var(--cor-de-fundo);
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.cabecalho h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	margin: 3px 0 3px 0;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.topo{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.topo figure img{
+	height: 50px;
+	margin-top: 5px;
+}
+
+.container li figure img{
+	width: 100%;
+}
+
+.container li figure img:hover{
+	border: #fff solid 2px;
+}
+
+.container li{
+	width: 186px;
+	margin: 10px 20px 10px 20px;
+	text-align: center;
+}
+
+.container li h3{
+	color: #fff;
+}
+
+footer{
+	display: flex;
+	margin-top: 10px;
+}
+
+button{
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 10px;
+	border: #fff solid 2px;
+	background-color: var(--cor-de-fundo);
+	color: #fff;
+	border-radius: 3px;
+}
+
+@media (min-width: 900px) {
+	.topo{
+		display: flex;
+		justify-content: start;
+		margin: 10px 15px;
 	}
-
-/*TOPO*/
-	header.topo{
-		
-	}
-
-/*RODAPÉ*/
 	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	section {
+		height: 720px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 	}
 
+	.cabecalho h2{
+		font-size: 60px;
+	}
+
+	.container{
+		max-width: 858px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.container li{
+		width: 186px;
+		margin: 0 20px 0 20px;
+	}
+}
