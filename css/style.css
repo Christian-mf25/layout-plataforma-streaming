@@ -42,12 +42,41 @@ body{
 	margin-top: 5px;
 }
 
+
+
 .container li figure img{
 	width: 100%;
+	border: 2px solid transparent;
 }
 
 .container li figure img:hover{
 	border: #fff solid 2px;
+}
+
+.container .addPerfil{
+	width: 174px;
+    height: 242px;
+    position: relative;
+}
+
+	.container .addPerfil h3{
+		position: absolute;
+		left: 50%;
+		bottom: 0%;
+		transform: translateX(-50%);
+		width: 138px;
+	}
+
+	.container .addPerfil figure img{
+		width: 45%;
+		position: absolute;
+		left: 50%;
+		top: 25%;
+		transform: translateX(-50%);
+	}
+
+.container .addPerfil figure img:hover{
+	border-radius: 50px;
 }
 
 .container li{
